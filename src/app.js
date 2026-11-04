@@ -1,7 +1,7 @@
 import { categories } from './data/categories.js?v=2';
 import { listProducts, getProduct } from './services/products.js?v=9';
 import { changeQuantity, loadCart, saveCart } from './cart/cart.js';
-import { shippingStatus, whatsappOrder } from './checkout/checkout.js';
+import { shippingStatus, whatsappOrder } from './checkout/checkout.js?v=customer';
 import { store } from './data/store.js';
 const $ = s => document.querySelector(s);
 const t = (ar) => ar;
@@ -22,7 +22,7 @@ async function renderCart() {
 }
 $('#search').oninput=renderProducts; $('#cart-button').onclick=()=>$('#cart').showModal(); $('#close-cart').onclick=()=>$('#cart').close();
 $('#instagram-link').href=store.instagramUrl;
-$('#checkout').onsubmit=e=>{e.preventDefault();try {const order=whatsappOrder(lines,money);$('#summary').value=order.text;$('#summary').hidden=false;window.open(order.url,'_blank','noopener,noreferrer');$('#checkout-message').textContent='أكمل اسمك وعنوانك في واتساب واضغط إرسال لتأكيد طلبك مع المتجر.';}catch(error){$('#checkout-message').textContent=error.message;}};
+$('#checkout').onsubmit=e=>{e.preventDefault();try {const order=whatsappOrder(lines,money,{name:$('#customer-name').value,phone:$('#customer-phone').value,address:$('#customer-address').value});$('#summary').value=order.text;$('#summary').hidden=false;window.open(order.url,'_blank','noopener,noreferrer');$('#checkout-message').textContent='تم تجهيز المنتجات وبياناتك في الرسالة. اضغط إرسال في واتساب لتأكيد الطلب مع المتجر.';}catch(error){$('#checkout-message').textContent=error.message;}};
 
 for(const label of ['الكل', ...categories]) {const button=element('button',label);button.setAttribute('aria-pressed',String(label===category));button.onclick=()=>{category=label;for(const b of $('#filters').children)b.setAttribute('aria-pressed',String(b===button));renderProducts();};$('#filters').append(button);} $('#close-image').onclick=()=>$('#image-view').close(); renderProducts();renderCart();
 
