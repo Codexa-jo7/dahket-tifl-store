@@ -66,31 +66,44 @@ async function renderProducts() {
   const grid = $('#products-list');
   grid.innerHTML = '';
   
+  // فرض شبكة متناسقة للبطاقات
+  grid.style.cssText = 'display: grid !important; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)) !important; gap: 20px !important; padding: 25px 0 !important; width: 100% !important; max-width: 1200px !important; margin: 0 auto !important;';
+
   if (!products.length) {
-    grid.append(element('p', $('#search').value ? t('لا توجد منتجات تطابق بحثك') : 'لا توجد منتجات متوفرة.', 'empty'));
+    grid.append(element('p', $('#search').value ? t('لا توجد منتجات تطابق بحثك') : 'لا توجد منتجات متوفرة حالياً.', 'empty'));
     return;
   }
 
   products.forEach(p => {
     const card = element('article', '', 'card');
+    card.style.cssText = 'display: flex !important; flex-direction: column !important; background: #ffffff !important; border-radius: 18px !important; overflow: hidden !important; border: 1px solid #eee !important; box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important; padding: 14px !important; box-sizing: border-box !important; text-align: center !important;';
     
     if (p.images && p.images.length) {
       const img = document.createElement('img');
       img.src = p.images[0].url;
       img.alt = p.images[0].alt || p.name;
       img.loading = 'lazy';
+      // ضبط قياس الصورة وإلغاء التمدد
+      img.style.cssText = 'width: 100% !important; height: 230px !important; object-fit: contain !important; border-radius: 12px !important; background-color: #fafafa !important; margin-bottom: 12px !important; display: block !important;';
       card.append(img);
     }
     
-    card.append(element('h3', p.name));
+    const title = element('h3', p.name);
+    title.style.cssText = 'font-size: 16px !important; margin: 8px 0 4px !important; color: #2f3542 !important; font-weight: 700 !important;';
+    card.append(title);
+
     if (p.description) {
-      card.append(element('p', p.description));
+      const desc = element('p', p.description);
+      desc.style.cssText = 'font-size: 12px !important; color: #747d8c !important; margin-bottom: 10px !important; flex-grow: 1 !important; line-height: 1.4 !important;';
+      card.append(desc);
     }
     
     const priceEl = element('strong', money(p.price, p.currency));
+    priceEl.style.cssText = 'font-size: 18px !important; color: #2f3542 !important; margin-bottom: 12px !important; display: block !important; font-weight: bold !important;';
     card.append(priceEl);
     
     const addBtn = element('button', 'أضف للسلة +');
+    addBtn.style.cssText = 'width: 100% !important; background: #4a335a !important; color: #ffffff !important; border: none !important; padding: 10px !important; border-radius: 10px !important; font-size: 14px !important; font-weight: bold !important; cursor: pointer !important; transition: opacity 0.2s !important;';
     addBtn.onclick = () => {
       cart = changeQuantity(cart, p.id, 1);
       saveCart(cart);
@@ -108,8 +121,35 @@ async function renderCart() {
   $('#count').textContent = lines.reduce((n, x) => n + x.quantity, 0);
   if ($('#floating-count')) $('#floating-count').textContent = $('#count').textContent;
 
-  const container = $('#cart-items') || $('#cart dialog');
-  // استدعاء دالة عرض السلة الأصلية إن وجدت أو الاكتفاء بالعداد
+  const container = $('#cart-items');
+  if (!container) return;
+  container.innerHTML = '';
+
+  if (!lines.length) {
+    container.append(element('p', 'سلتك فارغة حالياً.', 'empty-cart'));
+    if ($('#checkout-btn')) $('#checkout-btn').disabled = true;
+    return;
+  }
+  if ($('#checkout-btn')) $('#checkout-btn').disabled = false;
+
+  lines.forEach(({ product, quantity }) => {
+    const row = element('div', '', 'cart-row');
+    row.append(element('span', product.name));
+    row.append(element('span', money(product.price * quantity, product.currency)));
+    
+    const qtyDiv = element('div', '', 'cart-qty-ctrl');
+    const minus = element('button', '-');
+    minus.onclick = () => { cart = changeQuantity(cart, product.id, -1); renderCart(); };
+    const plus = element('button', '+');
+    plus.onclick = () => { cart = changeQuantity(cart, product.id, 1); renderCart(); };
+    
+    qtyDiv.append(minus, element('span', ` ${quantity} `), plus);
+    row.append(qtyDiv);
+    container.append(row);
+  });
+
+  const subtotal = lines.reduce((sum, line) => sum + (line.product.price * line.quantity), 0);
+  if ($('#cart-subtotal')) $('#cart-subtotal').textContent = money(subtotal, 'JOD');
 }
 
 $('#search').oninput = renderProducts;
