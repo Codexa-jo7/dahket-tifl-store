@@ -3,7 +3,7 @@ export function revealCards(container) {
  if (reduced()) return;
  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
   if (!entry.isIntersecting) return;
-  entry.target.animate([{opacity:0,transform:'translateY(45px) scale(.94)'},{opacity:1,transform:'translateY(0) scale(1)'}],{duration:650,easing:'cubic-bezier(.2,.8,.2,1)'});
+  entry.target.animate([{opacity:0,transform:'translateY(16px) scale(1)'},{opacity:1,transform:'translateY(0) scale(1)'}],{duration:400,easing:'cubic-bezier(.2,.8,.2,1)'});
   observer.unobserve(entry.target);
  }), {threshold:.12});
  container.querySelectorAll('.card').forEach(card=>observer.observe(card));
@@ -15,7 +15,7 @@ export function flyToCart(card) {
  const ghost=source.cloneNode();ghost.className='flying-product';
  Object.assign(ghost.style,{left:`${from.left}px`,top:`${from.top}px`,width:`${from.width}px`,height:`${from.height}px`});
  document.body.append(ghost);
- const animation=ghost.animate([{transform:'translate(0,0) scale(1)',opacity:.9},{transform:`translate(${to.left-from.left}px,${to.top-from.top}px) scale(.12)`,opacity:0}],{duration:750,easing:'cubic-bezier(.4,0,.2,1)'});
+ const animation=ghost.animate([{transform:'translate(0,0) scale(1)',opacity:.9},{transform:`translate(${to.left-from.left}px,${to.top-from.top}px) scale(.12)`,opacity:0}],{duration:450,easing:'cubic-bezier(.4,0,.2,1)'});
  animation.onfinish=()=>{ghost.remove();target.animate([{transform:'scale(1)'},{transform:'scale(1.14)'},{transform:'scale(1)'}],{duration:350});};
 }
 
@@ -36,9 +36,9 @@ export function startHeroMotion() {
   const next=new Image();next.src=`./assets/products/IMG-20261103-WA${images[index]}.jpg`;
   next.onload=()=>{
    if(paused)return;
-   const out=hero.animate([{opacity:1,transform:'translateX(0) rotate(-5deg)'},{opacity:0,transform:'translateX(-65px) rotate(-14deg) scale(.85)'}],{duration:400,easing:'ease-in',fill:'forwards'});
-   out.onfinish=()=>{hero.src=next.src;hero.alt='من مجموعة منتجات ضحكة طفل';out.cancel();hero.animate([{opacity:0,transform:'translateX(70px) rotate(12deg) scale(.85)'},{opacity:1,transform:'translateX(0) rotate(-5deg) scale(1)'}],{duration:750,easing:'cubic-bezier(.16,1,.3,1)'});};
+   const out=hero.animate([{opacity:1,transform:'translateX(0) rotate(-5deg)'},{opacity:0,transform:'translateX(-12px) rotate(-5deg) scale(1)'}],{duration:400,easing:'ease-in',fill:'forwards'});
+   out.onfinish=()=>{hero.src=next.src;hero.alt='من مجموعة منتجات ضحكة طفل';out.cancel();hero.animate([{opacity:0,transform:'translateX(12px) rotate(-5deg) scale(1)'},{opacity:1,transform:'translateX(0) rotate(-5deg) scale(1)'}],{duration:450,easing:'cubic-bezier(.16,1,.3,1)'});};
   };
- },4200);
+ },7000);
  matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',e=>{paused=e.matches;sync();});
 }

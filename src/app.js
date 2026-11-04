@@ -1,4 +1,4 @@
-import { revealCards, flyToCart, startHeroMotion } from './motion.js?v=4';
+import { revealCards, flyToCart, startHeroMotion } from './motion.js?v=5';
 import { listProducts, getProduct } from './services/products.js?v=3';
 import { changeQuantity, loadCart, saveCart } from './cart/cart.js';
 import { shippingStatus, whatsappOrder } from './checkout/checkout.js';
