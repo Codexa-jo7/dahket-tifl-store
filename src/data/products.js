@@ -1,16 +1,15 @@
-// Prices are integer hundredths of a Jordanian dinar; sourced from supplied promotional images. Availability requires merchant confirmation.
 export const products = [
   {
     "id": "p17",
     "slug": "product-17",
-    "name": "حلمة رضاعة",
+    "name": "حلمة بشكل الثدي الطبيعي",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 120,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0017.jpg",
-        "alt": "حلمة رضاعة"
+        "alt": "حلمة بشكل الثدي الطبيعي"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -21,14 +20,14 @@ export const products = [
   {
     "id": "p18",
     "slug": "product-18",
-    "name": "لهاية بتصميم الفيل",
+    "name": "لهاية بحلمة السيليكون",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 200,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0018.jpg",
-        "alt": "لهاية بتصميم الفيل"
+        "alt": "لهاية بحلمة السيليكون"
       }
     ],
     "category": "العناية بالطفل",
@@ -39,14 +38,14 @@ export const products = [
   {
     "id": "p19",
     "slug": "product-19",
-    "name": "سائل غسيل الرضاعات",
+    "name": "سائل غسيل رضاعات الأطفال",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 540,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0019.jpg",
-        "alt": "سائل غسيل الرضاعات"
+        "alt": "سائل غسيل رضاعات الأطفال"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -57,14 +56,14 @@ export const products = [
   {
     "id": "p20",
     "slug": "product-20",
-    "name": "لهاية سيليكون",
+    "name": "لهاية بحلمة السيليكون",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 200,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0020.jpg",
-        "alt": "لهاية سيليكون"
+        "alt": "لهاية بحلمة السيليكون"
       }
     ],
     "category": "العناية بالطفل",
@@ -93,14 +92,14 @@ export const products = [
   {
     "id": "p22",
     "slug": "product-22",
-    "name": "رضاعة بتصميم الأرنب",
+    "name": "رضاعة ناتشورال",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 395,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0022.jpg",
-        "alt": "رضاعة بتصميم الأرنب"
+        "alt": "رضاعة ناتشورال"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -111,14 +110,14 @@ export const products = [
   {
     "id": "p23",
     "slug": "product-23",
-    "name": "لهاية لحديثي الولادة",
+    "name": "مقص أظافر لحديثي الولادة",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 150,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0023.jpg",
-        "alt": "لهاية لحديثي الولادة"
+        "alt": "مقص أظافر لحديثي الولادة"
       }
     ],
     "category": "العناية بالأم",
@@ -147,14 +146,14 @@ export const products = [
   {
     "id": "p25",
     "slug": "product-25",
-    "name": "رضاعة بمقابض",
+    "name": "رضاعة بشكل الثدي الطبيعي مع مقبضين",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 400,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0025.jpg",
-        "alt": "رضاعة بمقابض"
+        "alt": "رضاعة بشكل الثدي الطبيعي مع مقبضين"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -165,14 +164,14 @@ export const products = [
   {
     "id": "p26",
     "slug": "product-26",
-    "name": "فرشاة أسنان سيليكون",
+    "name": "فرشاة أسنان سيليكون للأطفال",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 135,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0026.jpg",
-        "alt": "فرشاة أسنان سيليكون"
+        "alt": "فرشاة أسنان سيليكون للأطفال"
       }
     ],
     "category": "العناية بالطفل",
@@ -183,14 +182,14 @@ export const products = [
   {
     "id": "p27",
     "slug": "product-27",
-    "name": "إسفنجة استحمام",
+    "name": "إسفنجة كونجاك طبيعية 100% نباتية",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 295,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0027.jpg",
-        "alt": "إسفنجة استحمام"
+        "alt": "إسفنجة كونجاك طبيعية 100% نباتية"
       }
     ],
     "category": "العناية بالطفل",
@@ -201,14 +200,14 @@ export const products = [
   {
     "id": "p28",
     "slug": "product-28",
-    "name": "شفاط أنف للأطفال",
+    "name": "شفاط أنف للأطفال الرضع",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 350,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0028.jpg",
-        "alt": "شفاط أنف للأطفال"
+        "alt": "شفاط أنف للأطفال الرضع"
       }
     ],
     "category": "العناية بالطفل",
@@ -219,14 +218,14 @@ export const products = [
   {
     "id": "p29",
     "slug": "product-29",
-    "name": "رضاعة ذات حلمة واسعة",
+    "name": "رضاعة ذات حلمة بشكل الثدي الطبيعي",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 320,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0029.jpg",
-        "alt": "رضاعة ذات حلمة واسعة"
+        "alt": "رضاعة ذات حلمة بشكل الثدي الطبيعي"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -237,14 +236,14 @@ export const products = [
   {
     "id": "p31",
     "slug": "product-31",
-    "name": "إسفنجة استحمام للأطفال",
+    "name": "إسفنجة كونجاك للأطفال طبيعية 100% نباتية",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 400,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0031.jpg",
-        "alt": "إسفنجة استحمام للأطفال"
+        "alt": "إسفنجة كونجاك للأطفال طبيعية 100% نباتية"
       }
     ],
     "category": "العناية بالطفل",
@@ -255,14 +254,14 @@ export const products = [
   {
     "id": "p32",
     "slug": "product-32",
-    "name": "كوب الشرب التدريجي",
+    "name": "كوب الشرب التدريجي بمصاصة لون زهري",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 435,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0032.jpg",
-        "alt": "كوب الشرب التدريجي"
+        "alt": "كوب الشرب التدريجي بمصاصة لون زهري"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -291,14 +290,14 @@ export const products = [
   {
     "id": "p34",
     "slug": "product-34",
-    "name": "رضاعة 120 مل",
+    "name": "زجاجة الرضاعة الطبيعية",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 360,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0034.jpg",
-        "alt": "رضاعة 120 مل"
+        "alt": "زجاجة الرضاعة الطبيعية"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -309,14 +308,14 @@ export const products = [
   {
     "id": "p35",
     "slug": "product-35",
-    "name": "لهاية مع مشبك",
+    "name": "لهاية بحلمة السيليكون مع سلاسل أمن",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 345,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0035.jpg",
-        "alt": "لهاية مع مشبك"
+        "alt": "لهاية بحلمة السيليكون مع سلاسل أمن"
       }
     ],
     "category": "العناية بالطفل",
@@ -327,14 +326,14 @@ export const products = [
   {
     "id": "p36",
     "slug": "product-36",
-    "name": "مجموعة فرش تنظيف الرضاعات",
+    "name": "مجموعة فرش تنظيف رضاعة الأطفال",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 260,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0036.jpg",
-        "alt": "مجموعة فرش تنظيف الرضاعات"
+        "alt": "مجموعة فرش تنظيف رضاعة الأطفال"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -345,14 +344,14 @@ export const products = [
   {
     "id": "p37",
     "slug": "product-37",
-    "name": "رضاعة زجاج",
+    "name": "رضاعة زجاج مقاومة للحرارة",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 570,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0037.jpg",
-        "alt": "رضاعة زجاج"
+        "alt": "رضاعة زجاج مقاومة للحرارة"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -363,14 +362,14 @@ export const products = [
   {
     "id": "p38",
     "slug": "product-38",
-    "name": "خيط تنظيف أسنان الأطفال",
+    "name": "خيوط تنظيف الأسنان للأطفال",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 140,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0038.jpg",
-        "alt": "خيط تنظيف أسنان الأطفال"
+        "alt": "خيوط تنظيف الأسنان للأطفال"
       }
     ],
     "category": "العناية بالطفل",
@@ -381,14 +380,14 @@ export const products = [
   {
     "id": "p39",
     "slug": "product-39",
-    "name": "شفاط حليب يدوي",
+    "name": "شفاط الثدي اليدوي",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 1200,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0039.jpg",
-        "alt": "شفاط حليب يدوي"
+        "alt": "شفاط الثدي اليدوي"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -399,14 +398,14 @@ export const products = [
   {
     "id": "p40",
     "slug": "product-40",
-    "name": "حزام ما بعد الولادة",
+    "name": "حزام ما بعد الولادة 3 في 1",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 1795,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0040.jpg",
-        "alt": "حزام ما بعد الولادة"
+        "alt": "حزام ما بعد الولادة 3 في 1"
       }
     ],
     "category": "العناية بالأم",
@@ -417,14 +416,14 @@ export const products = [
   {
     "id": "p41",
     "slug": "product-41",
-    "name": "فرشاة ومشط شعر",
+    "name": "مجموعة فرشاة ومشط شعر الأطفال",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 350,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0041.jpg",
-        "alt": "فرشاة ومشط شعر"
+        "alt": "مجموعة فرشاة ومشط شعر الأطفال"
       }
     ],
     "category": "العناية بالطفل",
@@ -435,14 +434,14 @@ export const products = [
   {
     "id": "p42",
     "slug": "product-42",
-    "name": "مضخة حليب كهربائية مزدوجة",
+    "name": "مضخة الثدي الكهربائية المزدوجة",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 6500,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0042.jpg",
-        "alt": "مضخة حليب كهربائية مزدوجة"
+        "alt": "مضخة الثدي الكهربائية المزدوجة"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -453,14 +452,14 @@ export const products = [
   {
     "id": "p43",
     "slug": "product-43",
-    "name": "أكياس تخزين الحليب",
+    "name": "أكياس تخزين الحليب الحرارية",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 320,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0043.jpg",
-        "alt": "أكياس تخزين الحليب"
+        "alt": "أكياس تخزين الحليب الحرارية"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -471,14 +470,14 @@ export const products = [
   {
     "id": "p44",
     "slug": "product-44",
-    "name": "سائل غسيل ملابس الأطفال",
+    "name": "سائل غسيل ملابس المواليد الجدد",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 670,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0044.jpg",
-        "alt": "سائل غسيل ملابس الأطفال"
+        "alt": "سائل غسيل ملابس المواليد الجدد"
       }
     ],
     "category": "العناية بالطفل",
@@ -489,14 +488,14 @@ export const products = [
   {
     "id": "p46",
     "slug": "product-46",
-    "name": "لهاية مع مشبك سيليكون",
+    "name": "لهاية بحلمة السيليكون مع سلاسل أمن",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 325,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0046.jpg",
-        "alt": "لهاية مع مشبك سيليكون"
+        "alt": "لهاية بحلمة السيليكون مع سلاسل أمن"
       }
     ],
     "category": "العناية بالطفل",
@@ -507,14 +506,14 @@ export const products = [
   {
     "id": "p47",
     "slug": "product-47",
-    "name": "لهاية بتصميم الدب",
+    "name": "لهاية بحلمة السيليكون",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 200,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0047.jpg",
-        "alt": "لهاية بتصميم الدب"
+        "alt": "لهاية بحلمة السيليكون"
       }
     ],
     "category": "العناية بالطفل",
@@ -525,14 +524,14 @@ export const products = [
   {
     "id": "p48",
     "slug": "product-48",
-    "name": "رضاعة دواء",
+    "name": "وسادة ثدي رفيعة جداً للرضاعة — 30 قطعة",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 300,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0048.jpg",
-        "alt": "رضاعة دواء"
+        "alt": "وسادة ثدي رفيعة جداً للرضاعة — 30 قطعة"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -561,14 +560,14 @@ export const products = [
   {
     "id": "p50",
     "slug": "product-50",
-    "name": "عضاضة سيليكون",
+    "name": "عضاضة سيليكون مع حلقة زان طبيعية",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 485,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0050.jpg",
-        "alt": "عضاضة سيليكون"
+        "alt": "عضاضة سيليكون مع حلقة زان طبيعية"
       }
     ],
     "category": "العناية بالطفل",
@@ -579,14 +578,14 @@ export const products = [
   {
     "id": "p51",
     "slug": "product-51",
-    "name": "رضاعة دواء",
+    "name": "وسادة ثدي رفيعة جداً للرضاعة — 100 قطعة",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 670,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0051.jpg",
-        "alt": "رضاعة دواء"
+        "alt": "وسادة ثدي رفيعة جداً للرضاعة — 100 قطعة"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -615,14 +614,14 @@ export const products = [
   {
     "id": "p53",
     "slug": "product-53",
-    "name": "عضاضة سيليكون",
+    "name": "عضاضة سيليكون آمنة",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 385,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0053.jpg",
-        "alt": "عضاضة سيليكون"
+        "alt": "عضاضة سيليكون آمنة"
       }
     ],
     "category": "العناية بالطفل",
@@ -633,14 +632,14 @@ export const products = [
   {
     "id": "p54",
     "slug": "product-54",
-    "name": "فوط حماية وراحة",
+    "name": "شورت الحماية والراحة",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 350,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0054.jpg",
-        "alt": "فوط حماية وراحة"
+        "alt": "شورت الحماية والراحة"
       }
     ],
     "category": "العناية بالطفل",
@@ -651,14 +650,14 @@ export const products = [
   {
     "id": "p55",
     "slug": "product-55",
-    "name": "وسادة رضاعة",
+    "name": "وسادة تبريد فورية للاستعمال بعد الولادة",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 250,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0055.jpg",
-        "alt": "وسادة رضاعة"
+        "alt": "وسادة تبريد فورية للاستعمال بعد الولادة"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -669,14 +668,14 @@ export const products = [
   {
     "id": "p56",
     "slug": "product-56",
-    "name": "فوط حماية للثدي",
+    "name": "فوط صحية بالقطن العضوي",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 300,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0056.jpg",
-        "alt": "فوط حماية للثدي"
+        "alt": "فوط صحية بالقطن العضوي"
       }
     ],
     "category": "العناية بالطفل",
@@ -687,14 +686,14 @@ export const products = [
   {
     "id": "p57",
     "slug": "product-57",
-    "name": "شفاط حليب كهربائي",
+    "name": "شفاط حليب الأم الكهربائي",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 7500,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0057.jpg",
-        "alt": "شفاط حليب كهربائي"
+        "alt": "شفاط حليب الأم الكهربائي"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -705,14 +704,14 @@ export const products = [
   {
     "id": "p58",
     "slug": "product-58",
-    "name": "فوط للأم",
+    "name": "مرايل أطفال للاستخدام مرة واحدة",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 360,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0058.jpg",
-        "alt": "فوط للأم"
+        "alt": "مرايل أطفال للاستخدام مرة واحدة"
       }
     ],
     "category": "العناية بالطفل",
@@ -723,14 +722,14 @@ export const products = [
   {
     "id": "p59",
     "slug": "product-59",
-    "name": "أكياس حفظ",
+    "name": "أعواد قطنية آمنة للمواليد الجدد",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 150,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0059.jpg",
-        "alt": "أكياس حفظ"
+        "alt": "أعواد قطنية آمنة للمواليد الجدد"
       }
     ],
     "category": "العناية بالطفل",
@@ -741,14 +740,14 @@ export const products = [
   {
     "id": "p60",
     "slug": "product-60",
-    "name": "مريلة سيليكون",
+    "name": "مريلة السيليكون للأطفال",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 350,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0060.jpg",
-        "alt": "مريلة سيليكون"
+        "alt": "مريلة السيليكون للأطفال"
       }
     ],
     "category": "العناية بالطفل",
@@ -759,14 +758,14 @@ export const products = [
   {
     "id": "p61",
     "slug": "product-61",
-    "name": "حافظة طعام",
+    "name": "مضخة الثدي الكهربائية القابلة للارتداء",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 4500,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0061.jpg",
-        "alt": "حافظة طعام"
+        "alt": "مضخة الثدي الكهربائية القابلة للارتداء"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -777,14 +776,14 @@ export const products = [
   {
     "id": "p62",
     "slug": "product-62",
-    "name": "علبة حليب بودرة",
+    "name": "حافظة حليب البودرة",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 430,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0062.jpg",
-        "alt": "علبة حليب بودرة"
+        "alt": "حافظة حليب البودرة"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -795,14 +794,14 @@ export const products = [
   {
     "id": "p63",
     "slug": "product-63",
-    "name": "طبق طعام",
+    "name": "صحن سيليكون للأطفال",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 995,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0063.jpg",
-        "alt": "طبق طعام"
+        "alt": "صحن سيليكون للأطفال"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -813,14 +812,14 @@ export const products = [
   {
     "id": "p64",
     "slug": "product-64",
-    "name": "ملعقة سيليكون",
+    "name": "ملعقة سيليكون بمقبض خيزران",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 265,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0064.jpg",
-        "alt": "ملعقة سيليكون"
+        "alt": "ملعقة سيليكون بمقبض خيزران"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -831,14 +830,14 @@ export const products = [
   {
     "id": "p65",
     "slug": "product-65",
-    "name": "كوب شرب 300 مل",
+    "name": "كوب الشرب التدريجي 300 مل",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 395,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0065.jpg",
-        "alt": "كوب شرب 300 مل"
+        "alt": "كوب الشرب التدريجي 300 مل"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -849,14 +848,14 @@ export const products = [
   {
     "id": "p66",
     "slug": "product-66",
-    "name": "كوب شرب 180 مل",
+    "name": "كوب الشرب التدريجي 180 مل",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 340,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0066.jpg",
-        "alt": "كوب شرب 180 مل"
+        "alt": "كوب الشرب التدريجي 180 مل"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -867,14 +866,14 @@ export const products = [
   {
     "id": "p67",
     "slug": "product-67",
-    "name": "حامل لهاية سيليكون",
+    "name": "حاملة لهاية من السيليكون",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 300,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0067.jpg",
-        "alt": "حامل لهاية سيليكون"
+        "alt": "حاملة لهاية من السيليكون"
       }
     ],
     "category": "العناية بالطفل",
@@ -885,14 +884,14 @@ export const products = [
   {
     "id": "p68",
     "slug": "product-68",
-    "name": "كوب شرب",
+    "name": "كوب تدريب الطفل على الشرب مزدوج الطبقات",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 475,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0068.jpg",
-        "alt": "كوب شرب"
+        "alt": "كوب تدريب الطفل على الشرب مزدوج الطبقات"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -903,14 +902,14 @@ export const products = [
   {
     "id": "p69",
     "slug": "product-69",
-    "name": "قفاز تسنين",
+    "name": "قفاز التسنين",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 480,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0069.jpg",
-        "alt": "قفاز تسنين"
+        "alt": "قفاز التسنين"
       }
     ],
     "category": "العناية بالطفل",
@@ -921,14 +920,14 @@ export const products = [
   {
     "id": "p70",
     "slug": "product-70",
-    "name": "شفاط حليب يدوي سيليكون",
+    "name": "شافطة حليب الأم من السيليكون للرضاعة الطبيعية",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 450,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0070.jpg",
-        "alt": "شفاط حليب يدوي سيليكون"
+        "alt": "شافطة حليب الأم من السيليكون للرضاعة الطبيعية"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -975,14 +974,14 @@ export const products = [
   {
     "id": "p73",
     "slug": "product-73",
-    "name": "فرشاة رضاعات سيليكون",
+    "name": "فرشاة الرضاعات من السيليكون",
     "description": "التفاصيل والمواصفات موضحة في صورة المنتج.",
     "price": 400,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0073.jpg",
-        "alt": "فرشاة رضاعات سيليكون"
+        "alt": "فرشاة الرضاعات من السيليكون"
       }
     ],
     "category": "الرضاعة والتغذية",
