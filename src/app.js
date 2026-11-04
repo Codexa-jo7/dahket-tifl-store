@@ -1,4 +1,5 @@
-import { listProducts, getProduct } from './services/products.js?v=7';
+import { categories } from './data/categories.js';
+import { listProducts, getProduct } from './services/products.js?v=8';
 import { changeQuantity, loadCart, saveCart } from './cart/cart.js';
 import { shippingStatus, whatsappOrder } from './checkout/checkout.js';
 import { store } from './data/store.js';
@@ -23,7 +24,7 @@ $('#search').oninput=renderProducts; $('#cart-button').onclick=()=>$('#cart').sh
 $('#instagram-link').href=store.instagramUrl;
 $('#checkout').onsubmit=e=>{e.preventDefault();try {const order=whatsappOrder(lines,money);$('#summary').value=order.text;$('#summary').hidden=false;window.open(order.url,'_blank','noopener,noreferrer');$('#checkout-message').textContent='أكمل اسمك وعنوانك في واتساب واضغط إرسال لتأكيد طلبك مع المتجر.';}catch(error){$('#checkout-message').textContent=error.message;}};
 
-for(const label of ['الكل','الرضاعة والتغذية','العناية بالطفل','النظافة والاستحمام','العناية بالأم']) {const button=element('button',label);button.setAttribute('aria-pressed',String(label===category));button.onclick=()=>{category=label;for(const b of $('#filters').children)b.setAttribute('aria-pressed',String(b===button));renderProducts();};$('#filters').append(button);} $('#close-image').onclick=()=>$('#image-view').close(); renderProducts();renderCart();
+for(const label of ['الكل', ...categories]) {const button=element('button',label);button.setAttribute('aria-pressed',String(label===category));button.onclick=()=>{category=label;for(const b of $('#filters').children)b.setAttribute('aria-pressed',String(b===button));renderProducts();};$('#filters').append(button);} $('#close-image').onclick=()=>$('#image-view').close(); renderProducts();renderCart();
 
 $('#floating-cart').onclick=()=>$('#cart').showModal();
 
