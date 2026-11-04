@@ -251,5 +251,46 @@
 
   fetchProducts();
 </script>
+  <!-- Supabase SDK & Live Sync -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  (async function() {
+    const SUPABASE_URL = "https://ekkfcefygmvdcwbxybth.supabase.co";
+    const SUPABASE_KEY = "sb_publishable_h-L8N3j5IQUg7Pnl1eL3Qw_voWpqqh7";
+    const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+    const { data: dbProducts, error } = await client
+      .from('products')
+      .select('*')
+      .order('id', { ascending: false });
+
+    if (error || !dbProducts || dbProducts.length === 0) return;
+
+    const container = document.getElementById('products-list');
+    if (!container) return;
+
+    // تفريغ القائمة القديمة واستبدالها بالمنتجات الحية
+    container.innerHTML = '';
+
+    dbProducts.forEach(prod => {
+      const card = document.createElement('article');
+      card.className = 'product-card';
+      card.innerHTML = `
+        <div class="product-media">
+          <img src="${prod.image_url}" alt="${prod.title}" loading="lazy">
+        </div>
+        <div class="product-info">
+          <h3>${prod.title}</h3>
+          <p class="product-desc">${prod.description || ''}</p>
+          <div class="product-bottom">
+            <span class="price">${Number(prod.price).toFixed(2)} د.أ</span>
+            <button class="add-to-cart-btn" onclick="window.location.href='https://wa.me/962790782290?text=' + encodeURIComponent('مرحباً، أود طلب المنتج: ' + '${prod.title}' + ' بسعر: ' + '${prod.price}' + ' د.أ')">طلب عبر واتساب</button>
+          </div>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  })();
+</script>
 </body>
 </html>
