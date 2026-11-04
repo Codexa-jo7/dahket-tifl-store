@@ -138,7 +138,7 @@ export const products = [
         "alt": "واقي الحلمة السيليكوني"
       }
     ],
-    "category": "العناية بالطفل",
+    "category": "العناية بالأم",
     "available": true,
     "attributes": {},
     "variants": []
@@ -192,7 +192,7 @@ export const products = [
         "alt": "إسفنجة كونجاك"
       }
     ],
-    "category": "العناية بالطفل",
+    "category": "النظافة والاستحمام",
     "available": true,
     "attributes": {},
     "variants": []
@@ -246,7 +246,7 @@ export const products = [
         "alt": "إسفنجة كونجاك للأطفال"
       }
     ],
-    "category": "العناية بالطفل",
+    "category": "النظافة والاستحمام",
     "available": true,
     "attributes": {},
     "variants": []
@@ -372,7 +372,7 @@ export const products = [
         "alt": "خيوط تنظيف الأسنان"
       }
     ],
-    "category": "العناية بالطفل",
+    "category": "النظافة والاستحمام",
     "available": true,
     "attributes": {},
     "variants": []
@@ -642,7 +642,7 @@ export const products = [
         "alt": "شورت الحماية والراحة"
       }
     ],
-    "category": "العناية بالطفل",
+    "category": "العناية بالأم",
     "available": true,
     "attributes": {},
     "variants": []
@@ -678,7 +678,7 @@ export const products = [
         "alt": "فوط صحية بالقطن العضوي"
       }
     ],
-    "category": "العناية بالطفل",
+    "category": "العناية بالأم",
     "available": true,
     "attributes": {},
     "variants": []
