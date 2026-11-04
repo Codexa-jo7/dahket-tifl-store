@@ -254,14 +254,14 @@ export const products = [
   {
     "id": "p32",
     "slug": "product-32",
-    "name": "كوب الشرب التدريجي",
+    "name": "كوب الشرب التدريبي",
     "description": "بمصاصة لون زهري",
     "price": 435,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0032.jpg",
-        "alt": "كوب الشرب التدريجي"
+        "alt": "كوب الشرب التدريبي"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -830,14 +830,14 @@ export const products = [
   {
     "id": "p65",
     "slug": "product-65",
-    "name": "كوب الشرب التدريجي",
+    "name": "كوب الشرب التدريبي",
     "description": "300 مل",
     "price": 395,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0065.jpg",
-        "alt": "كوب الشرب التدريجي"
+        "alt": "كوب الشرب التدريبي"
       }
     ],
     "category": "الرضاعة والتغذية",
@@ -848,14 +848,14 @@ export const products = [
   {
     "id": "p66",
     "slug": "product-66",
-    "name": "كوب الشرب التدريجي",
+    "name": "كوب الشرب التدريبي",
     "description": "180 مل",
     "price": 340,
     "currency": "JOD",
     "images": [
       {
         "url": "./assets/products/IMG-20261103-WA0066.jpg",
-        "alt": "كوب الشرب التدريجي"
+        "alt": "كوب الشرب التدريبي"
       }
     ],
     "category": "الرضاعة والتغذية",

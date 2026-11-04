@@ -1,4 +1,4 @@
-import { listProducts, getProduct } from './services/products.js?v=3';
+import { listProducts, getProduct } from './services/products.js?v=6';
 import { changeQuantity, loadCart, saveCart } from './cart/cart.js';
 import { shippingStatus, whatsappOrder } from './checkout/checkout.js';
 import { store } from './data/store.js';
@@ -8,7 +8,7 @@ const money = (value, currency) => new Intl.NumberFormat('ar-JO', {style:'curren
 let cart = loadCart(), lines = [], category = "الكل";
 function element(tag, text, className) { const el = document.createElement(tag); el.textContent = text; if(className) el.className = className; return el; }
 async function renderProducts() {
- const products = (await listProducts($('#search').value)).filter(p => category === 'الكل' || p.category === category); $('#results-count').textContent = `${products.length} ${t('منتج','products')}`; const grid = $('#products-list'); grid.replaceChildren();
+ const products = (await listProducts($('#search').value)).filter(p => category === 'الكل' || p.category === category); const grid = $('#products-list'); grid.replaceChildren();
  if (!products.length) { grid.append(element('p', $('#search').value ? t('لا توجد منتجات تطابق بحثك.','No products match your search.') : 'نجهّز مجموعتنا الأولى. صور المنتجات وتفاصيلها ستظهر هنا قريباً.', 'empty')); return; }
  products.forEach(p => { const card = element('article','','card'); if(p.images?.length) { const img = document.createElement('img'); img.src=p.images[0].url; img.loading='lazy'; img.tabIndex=0; const openImage=()=>{const full=$('#image-view img');full.src=img.src;full.alt=img.alt;$('#image-view').showModal();}; img.onclick=openImage;img.onkeydown=e=>{if(e.key==='Enter')openImage();}; img.alt=p.images[0].alt || p.name; card.append(img); } card.append(element('h3',p.name),element('p',t(p.description,'See the original product image for details.')),element('strong',money(p.price,p.currency))); const add=element('button',p.available?t('أضف للسلة +','Add to bag +'):t('غير متوفر','Unavailable'),'primary'); add.disabled=!p.available; add.onclick=()=> { cart=changeQuantity(cart,p.id,(cart.find(x=>x.id===p.id)?.quantity||0)+1); renderCart(); $('#toast').textContent=t('تمت الإضافة إلى السلة ♡','Added to your bag ♡'); $('#toast').classList.add('visible'); clearTimeout(window.toastTimer); window.toastTimer=setTimeout(()=>$('#toast').classList.remove('visible'),2200); }; card.append(add); grid.append(card); });
 }
