@@ -1,4 +1,4 @@
-import { products } from '../data/products.js?v=8';
+import { products } from '../data/products.js?v=9';
 // Replace this adapter with API calls when a database is introduced.
 export async function listProducts(query = '') {
   return structuredClone(products.filter(p => p.name.includes(query.trim())));

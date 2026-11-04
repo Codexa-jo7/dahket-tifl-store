@@ -1,5 +1,5 @@
-import { categories } from './data/categories.js';
-import { listProducts, getProduct } from './services/products.js?v=8';
+import { categories } from './data/categories.js?v=2';
+import { listProducts, getProduct } from './services/products.js?v=9';
 import { changeQuantity, loadCart, saveCart } from './cart/cart.js';
 import { shippingStatus, whatsappOrder } from './checkout/checkout.js';
 import { store } from './data/store.js';

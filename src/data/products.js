@@ -12,7 +12,7 @@ export const products = [
         "alt": "حلمة"
       }
     ],
-    "category": "الرضاعات والحلمات",
+    "category": "الرضاعات ومستلزماتها",
     "available": true,
     "attributes": {},
     "variants": []
@@ -30,7 +30,7 @@ export const products = [
         "alt": "رضاعة ناتشورال"
       }
     ],
-    "category": "الرضاعات والحلمات",
+    "category": "الرضاعات ومستلزماتها",
     "available": true,
     "attributes": {},
     "variants": []
@@ -48,7 +48,7 @@ export const products = [
         "alt": "رضاعة بشكل الثدي الطبيعي"
       }
     ],
-    "category": "الرضاعات والحلمات",
+    "category": "الرضاعات ومستلزماتها",
     "available": true,
     "attributes": {},
     "variants": []
@@ -66,7 +66,7 @@ export const products = [
         "alt": "رضاعة ذات حلمة"
       }
     ],
-    "category": "الرضاعات والحلمات",
+    "category": "الرضاعات ومستلزماتها",
     "available": true,
     "attributes": {},
     "variants": []
@@ -84,7 +84,7 @@ export const products = [
         "alt": "زجاجة الرضاعة الطبيعية"
       }
     ],
-    "category": "الرضاعات والحلمات",
+    "category": "الرضاعات ومستلزماتها",
     "available": true,
     "attributes": {},
     "variants": []
@@ -102,7 +102,7 @@ export const products = [
         "alt": "رضاعة زجاج مقاومة للحرارة"
       }
     ],
-    "category": "الرضاعات والحلمات",
+    "category": "الرضاعات ومستلزماتها",
     "available": true,
     "attributes": {},
     "variants": []
