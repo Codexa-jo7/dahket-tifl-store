@@ -1,4 +1,4 @@
-import { revealCards, flyToCart } from './motion.js?v=3';
+import { revealCards, flyToCart, startHeroMotion } from './motion.js?v=4';
 import { listProducts, getProduct } from './services/products.js?v=3';
 import { changeQuantity, loadCart, saveCart } from './cart/cart.js';
 import { shippingStatus, whatsappOrder } from './checkout/checkout.js';
@@ -27,3 +27,5 @@ $('#checkout').onsubmit=e=>{e.preventDefault();try {const order=whatsappOrder(li
 for(const label of ['الكل','الرضاعة والتغذية','العناية بالطفل','العناية بالأم']) {const button=element('button',label);button.setAttribute('aria-pressed',String(label===category));button.onclick=()=>{category=label;for(const b of $('#filters').children)b.setAttribute('aria-pressed',String(b===button));renderProducts();};$('#filters').append(button);} $('#close-image').onclick=()=>$('#image-view').close(); renderProducts();renderCart();
 
 $('#floating-cart').onclick=()=>$('#cart').showModal();
+
+startHeroMotion();
