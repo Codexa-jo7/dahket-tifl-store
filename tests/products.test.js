@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {normalizeProduct} from '../src/services/products.js';
+test('duplicate names retain distinct database IDs and values',()=>{const a=normalizeProduct({id:1,title:'لهاية',price:2,image_url:'a.jpg'}),b=normalizeProduct({id:2,title:'لهاية',price:3,image_url:'b.jpg'});assert.notEqual(a.id,b.id);assert.equal(a.price,200);assert.equal(b.price,300);assert.equal(a.category,'منتجات أخرى');});
+test('new records and explicit availability map without a local match',()=>{const p=normalizeProduct({id:300,title:'جديد',price:4.85,category:'العناية بالأم',available:false});assert.equal(p.price,485);assert.equal(p.category,'العناية بالأم');assert.equal(p.available,false);});
